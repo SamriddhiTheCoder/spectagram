@@ -8,13 +8,9 @@ import BottomTabNavigator from './navigation/TabNavigator';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Spectagram!</Text>
-      <StatusBar style="auto" />
-
       <NavigationContainer>
-      <DrawerNavigator/>
+        <BottomTabNavigator />
       </NavigationContainer>
-      
     </View>
   );
 }
@@ -23,7 +19,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
